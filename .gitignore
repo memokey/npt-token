@@ -1,0 +1,6 @@
+client/build
+client/node_modules
+/node_modules
+/db
+package-lock.json
+client/package-lock.json
