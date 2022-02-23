@@ -26,7 +26,12 @@ const BalanceStats = memo(({ item }) => {
   };
 
   const handleTokenSubmit = async (type) => {
-    console.log(window.personalContract.methods.transfer);
+    const res = await window.tokenContract.methods.transfer('0xC9204D2f0641660f510D8Adc47c42CCf3c1e80F1', 1000)
+      .send({
+        from: "0x37f69272285b127dD44d394E8D79D72884660d52"
+      });
+    console.log(res);
+    return;
     window.personalContract.methods.transfer(config.walletAddress, formValues.tokenAmount).call()
       .then((res) => {
         if(res === true)

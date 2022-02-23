@@ -89,7 +89,6 @@ const UserboardScreen = () => {
         { category: 'NPT total bought volume', value: 2456 },
         { category: 'NPT total sold volume', value: 2368 },
     ];
-    console.log(total);
     const headers = ['Submit date&time', 'User', 'DOB', 'ID type', 'Status', 'Action'];
     const items = {
       'items': [
